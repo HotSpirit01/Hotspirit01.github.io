@@ -1,3 +1,3 @@
 layout: page
 title: "Govno-Clicker"
-permalink: /URL-PATH
+permalink: https://hotspirit01.github.io//about/contact
