@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<audio src="audio/tap.wav" id="tapaud"></audio>
+<audio src="audio/upg.mp3" id="upgaud"></audio>
+<audio src="audio/pass.mp3" id="passaud"></audio>
+<audio id="pass" loop muted><source src="audio/soundtr.mp3" type="audio/mp3"></audio>
+<body>
+    <p id="money">Money:</p>
+    <p id="upgr">Click Upgrades:</p>
+    <p id="error" style="color: red"></p>
+    <div class = "container" style="position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);">
+    <button style="width: 200px; height: 50px;" type = "button" name="click" id="click" onclick="count(); document.getElementById('tapaud').play()">Click</button>
+    </div>
+    <button type = "button" name = "clickUpgrade" id="clku" onclick="clku()" style="width: 200px; height: 50px; position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);">Upgrade clicks</button>
+  <button type = "button" name = "passUpgrade" id="pass" onclick="pass()" style="width: 200px; height: 50px; position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);" id="pass" onclick="pass()">Passive income</button>
+  <button type = "button" name = "timeupg" id="timeupg" onclick="minust()" style="width: 200px; height: 50px; position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);" id="pass" onclick="pass()">-time</button>
+</body>
+<script src="js/game.js"></script>
+</html>
